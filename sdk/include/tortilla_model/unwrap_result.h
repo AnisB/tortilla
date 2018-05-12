@@ -11,8 +11,10 @@ namespace tortilla
 		ALLOCATOR_BASED
 		TUnwrapResult(bento::IAllocator& alloc)
 		: _uvs(alloc)
+		, _allocator(alloc)
 		{
 		}
-		bento::Vector<bento::Vector2> _uvs;
+		bento::Vector<bento::Vector2> 	_uvs;
+		bento::IAllocator&				_allocator;
 	};
 }

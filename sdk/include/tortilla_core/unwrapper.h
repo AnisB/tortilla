@@ -6,5 +6,5 @@
 
 namespace tortilla
 {
-	bool unwwrap_mesh(const TMesh& target_mesh, TUnwrapResult& output_result);
+	bool unwrap_mesh(const TMesh& target_mesh, TUnwrapResult& output_result);
 }

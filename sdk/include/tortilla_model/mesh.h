@@ -12,13 +12,13 @@ namespace tortilla
 		TMesh(bento::IAllocator& alloc)
 		: _verts(alloc)
 		, _indexes(alloc)
-		, _allocator(&alloc)
+		, _allocator(alloc)
 		{
 		}
 
-		bento::Vector<bento::Vector3> _verts;
-		bento::Vector<bento::IVector3> _indexes;
-		bento::IAllocator*	_allocator;
+		bento::Vector<bento::Vector3> 	_verts;
+		bento::Vector<bento::IVector3> 	_indexes;
+		bento::IAllocator&				_allocator;
 	};
 }
 

@@ -8,3 +8,4 @@
 
 struct TortillaAllocatorObject;
 struct TortillaMeshObject;
+struct TortillaUnwrapResultObject;
