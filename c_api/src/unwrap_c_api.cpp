@@ -20,7 +20,7 @@ void tortilla_destroy_unwrap_result(TortillaUnwrapResultObject* unwrap_result)
 float* tortilla_result_values(TortillaUnwrapResultObject* unwrap_result)
 {
 	tortilla::TUnwrapResult* unwrap_result_ptr = (tortilla::TUnwrapResult*)unwrap_result;
-	return unwrap_result_ptr._uvs.begin();
+	return (float*)(unwrap_result_ptr->_uvs.begin());
 }
 
 bool tortilla_unwrap_mesh(TortillaMeshObject* target_mesh, TortillaUnwrapResultObject* unwrap_result)
